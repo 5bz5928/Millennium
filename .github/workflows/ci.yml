@@ -38,6 +38,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Get Next Version
+        continue-on-error: true
         id: get_version
         run: |
           cd scripts && npx semantic-release --dry-run --no-ci
@@ -304,7 +305,7 @@ jobs:
           [ $ARCH_FAIL -eq 0 ] || { echo "ERROR: binary architecture mismatch"; exit 1; }
 
   release:
-    needs: [prepare, build-windows, build-linux, test-pkgbuild]
+    needs: [build-windows, build-linux, test-pkgbuild]
     runs-on: ubuntu-latest
     if: ${{ inputs.release_artifacts == 'yes' }}
     steps:
@@ -377,7 +378,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
 
   update-pkgbuild:
-    needs: [prepare, release]
+    needs: [release]
     runs-on: ubuntu-latest
     if: ${{ inputs.release_artifacts == 'yes' }}
     outputs:
@@ -416,7 +417,7 @@ jobs:
           echo "updated_sha=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
 
   update-nix:
-    needs: [prepare, update-pkgbuild]
+    needs: [update-pkgbuild]
     if: ${{ inputs.release_artifacts == 'yes' }}
     uses: ./.github/workflows/update-nix.yml
     secrets: inherit
