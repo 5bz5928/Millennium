@@ -145,7 +145,7 @@ jobs:
           path: D:\a\Millennium\Millennium\signed-millennium
 
   build-linux:
-    needs: prepare
+    needs: []
     permissions:
       contents: write
       issues: write
@@ -217,7 +217,7 @@ jobs:
           path: ~/build/
 
   test-pkgbuild:
-    needs: prepare
+    needs: []
     runs-on: ubuntu-latest
     container:
       image: archlinux:base-devel
